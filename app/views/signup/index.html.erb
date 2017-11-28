@@ -1,0 +1,32 @@
+
+<div class="row">
+  <div id='login-c6ab6f67' class="col-sm-3 col-sm-offset-4" style='display:   inline-block;   padding:   5px'></div>
+</div>
+<script>
+    (function () {
+        if (typeof(window.socialid) !== "object") window.socialid = {};
+
+
+        socialid.onLoad = function () {
+            socialid.login.init(422, {loginType: "event"});
+            socialid.login.renderLoginWidget("login-c6ab6f67",
+                {
+                    "providers": ["facebook", "gplus", "twitter", "linkedin"],
+                    "theme": "bricks",
+                    "showSocialIdLink": true
+                });
+            eventHandlers();
+        };
+
+        var e = document.createElement('script');
+        e.type = 'text/javascript';
+        e.id = 'socialid_api_script';
+        if (document.location.protocol === 'https:') {
+            e.src = 'https://staging.socialidnow.com/assets/api/socialid.js';
+        } else {
+            e.src = 'http://staging.socialidnow.com/assets/api/socialid.js';
+        }
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(e, s);
+    })();
+</script>
