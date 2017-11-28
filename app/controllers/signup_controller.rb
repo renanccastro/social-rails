@@ -50,16 +50,5 @@ class SignupController < ApplicationController
       redirect_to action: 'index'
     end
   end
-  
-  def signup
-    user = User.find_by(id: params[:user][:token])
-    if user
-      log_in user
-      redirect_to user
-    else
-      # Create an error message.
-      render 'new'
-    end
-  end
-  
+
 end

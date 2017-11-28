@@ -4,7 +4,5 @@ Rails.application.routes.draw do
   delete 'signup/logout' => 'signup#logout', :as => :signup_logout
   get 'signup/profile'
   root 'signup#index'
-
-  resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
