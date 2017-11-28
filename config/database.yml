@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: social-rails_production
-  username: social-rails
-  password: <%= ENV['SOCIAL-RAILS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: dbeah93uemhgmu
+  username: zutrbhgqborkdc
+  password: <%= ENV['DATABASE_PASSWORD'] %>
