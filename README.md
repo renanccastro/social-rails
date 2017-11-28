@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esse demo foi desenvolvido em Ruby on Rails, utilizando as APIS de Social Login da Coffee Bean Technology.
 
-Things you may want to cover:
+O funcionamento básico é: autenticação nas redes sociais do lado cliente e envio por ajax do token retornado.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Para o consumo da api foi utilizada a lib HTTParty. O login utilizou a sessão do usuário.
